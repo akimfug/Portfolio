@@ -1,0 +1,39 @@
+{
+  "name": "akimfuzhenko-portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akimfug/Portfolio.git"
+  },
+  "keywords": [
+    "akim"
+  ],
+  "author": "Akim Fuzhenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akimfug/Portfolio/issues"
+  },
+  "homepage": "https://github.com/akimfug/Portfolio#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
+}
