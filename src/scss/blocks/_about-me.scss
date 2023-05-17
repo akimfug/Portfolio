@@ -1,0 +1,68 @@
+.about-me {
+    min-height: 840px;
+    display: flex;
+    align-items: center;
+    &__content {
+        margin-left: 58px;
+        margin-top: 6px;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        @include before-circle;
+    }
+    &__title {
+        margin-top: 6px;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__img {
+        width: 400px;
+        height: 600px;
+    }
+    hr {
+        width: 60px;
+        height: 3px;
+        background-color: #FFA501;
+        border: 0;
+    }
+    &__descr {
+        margin-top: 20px;
+        width: 570px;
+        font-weight: 500;
+    }
+    &__skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 260px);
+        grid-template-rows: repeat(2, 116px);
+        grid-auto-flow: column;
+        column-gap: 20px;
+        row-gap: 50px;
+        margin-top: 40px;
+    }
+    &__skill {
+        position: relative;
+        display: flex;
+        width: 260px;
+        height: 116px;
+        @include before-circle;
+        &:before {
+            top: 0px
+        }
+    }
+    &__header {
+    
+    }
+    &__icon {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        margin-left: 15px;
+        margin-top:  15px;
+        margin-right: 20px;
+    }
+    &__text {
+        font-weight: 500;
+    }
+}
