@@ -1,0 +1,95 @@
+.benefit {
+    min-height: 700px;
+    position: relative;
+    &__column:nth-child(2) {
+        margin-left: 50px;
+    }    
+    &__title {
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        @include before-circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -6px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 375px);
+        column-gap: 153px;
+    }
+    &__header {
+        position: relative;
+        @include before-circle;
+        &:before {
+            width: 15px;
+            height: 15px;
+            top: 6px;
+            left: -50px;
+        }
+    }
+    &__section {
+        // margin-left: 50px;
+    }
+    &-item {
+        margin-top: 45px;
+        position: relative;
+        list-style-type: none;
+        &__wrapper {
+            
+        }
+        &__header {
+            display: flex;
+            height: 36px;
+        }
+        &__img {
+            position: relative;
+            @include before-circle;
+            &:before {
+                top: 0;
+            }
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 42px;
+                height: 1px;
+                background-color: black;
+                top: 17px;
+                left: -42px;
+            }
+        }
+        &__titles {
+            padding-left: 56px;
+        }
+        &__subtitle {
+            font-weight: 500;
+        }
+        img {
+            left: 16px;
+            bottom: 0px;
+            position: absolute;
+        }
+
+        &__descr {
+            margin-top: 12px;
+            font-weight: 500;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: -43px;
+            top: -54px;
+            width: 1px;            
+            height: calc(100% + 54px);
+            background-color: black;
+        }
+        
+    }
+}

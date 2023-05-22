@@ -43,12 +43,44 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section class="menu" id="menu">
+        <div class="menu__inner">
+            <div class="menu__close" data-close>
+                &#10006;
+            </div>
+            <div class="menu__block">
+                <ul>
+                    <li data-close><a href="#about-me">ПРО МЕНЯ</a></li>
+                    <li data-close><a href="#benefit">МОЙ ОПЫТ</a></li>
+                    <li data-close><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li data-close><a href="#projects">МОИ РАБОТЫ</a></li>
+                    <li data-close><a href="#price-list">ПРАЙС-ЛИСТ</a></li>
+                    <li data-close><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+            <div class="menu__socials__wrapper">
+                <div class="menu__socials">
+                    <div class="menu__social"><img src="img/icons/social/Facebook_black_normal.svg" alt=""></div>
+                    <div class="menu__social"><img src="img/icons/social/Github_black_normal.svg" alt=""></div>
+                    <div class="menu__social"><img src="img/icons/social/Instagram_black_normal.svg" alt=""></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="overlay" data-close>1</div>
+    </section>
+   
+    <section class="promo" id="promo">
+        <div class="hamburger">
+            <span></span>
+            <span class="hamburger_long"></span>
+            <span></span>
+        </div>
         <aside class="sidepanel">
             <a href="#" class="sidepanel_link"><img src="/img/icons/social/instagram.svg" alt="facebook"></a>
             <a href="#" class="sidepanel_link"><img src="/img/icons/social/github.svg" alt="icons"></a>
             <a href="#" class="sidepanel_link"><img src="/img/icons/social/telegram.svg" alt="social"></a>
-            <hr class="sidepanel__splitter">
+            <hr class="splitter_sidepanel">
             <div class="sidepanel__text"><span>Социальные сети</span></div>
         </aside>
 
@@ -61,7 +93,7 @@
             </div>
         </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="container">
             <div class="about-me__wrapper">
                 <div class="about-me__img">
@@ -70,7 +102,7 @@
                 <div class="about-me__content">
                     <div class="title title_fz16 about-me__subtitle">Про меня</div>
                     <h2 class="title title_fz32 about-me__title">Меня зовут Аким</h2>
-                    <hr>
+                    <hr class="splitter_about-me">
                     <div class="title title_fz14 about-me__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
                     <div class="about-me__skills">
                         <div class="about-me__skill">
@@ -112,5 +144,296 @@
             </div>
         </div>
     </section>
+    <section class="benefit" id="benefit">
+        <div class="container">
+
+            <div class="benefit__subtitle title title_fz16">Опыт</div>
+            <div class="benefit__title title">Чем я буду полезен</div>
+            <hr class="splitter_benefit">
+    
+            <div class="benefit__content">
+                <div class="benefit__column">
+                    <div class="benefit__header title title_fz20">
+                        Образование
+                    </div>
+                    <div class="benefit__section">
+                        <ul class="benefit-item__wrapper">
+                            <li class="benefit-item">
+                                <div class="benefit-item__header">
+                                    <div class="benefit-item__img">
+                                        <img src="img/icons/experience/university.svg" alt="">
+                                    </div>
+                                    <div class="benefit-item__titles">
+                                        <div class="benefit-item__title title title_fz14">
+                                            МГТУ им. Н. Э. Баумана
+                                        </div>
+                                        <div class="benefit-item__subtitle title title_fz12">
+                                            Диплом магистра | Москва (2014-2020)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="benefit-item__descr title title_fz12">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                </div>
+                            </li>
+                            <li class="benefit-item">
+                                <div class="benefit-item__header">
+                                    <div class="benefit-item__img">
+                                        <img src="img/icons/experience/university.svg" alt="">
+                                    </div>
+                                    <div class="benefit-item__titles">
+                                        <div class="benefit-item__title title title_fz14">
+                                            Udemy
+                                        </div>
+                                        <div class="benefit-item__subtitle title title_fz12">
+                                            Курсы по Web-разработке 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="benefit-item__descr title title_fz12">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="benefit__column">
+                    <div class="benefit__header title title_fz20">
+                        Опыт работы
+                    </div>
+                    <div class="benefit__section">
+                        <ul class="benefit-item__wrapper">
+                            <li class="benefit-item">
+                                <div class="benefit-item__header">
+                                    <div class="benefit-item__img">
+                                        <img src="img/icons/experience/university.svg" alt="">
+                                    </div>
+                                    <div class="benefit-item__titles">
+                                        <div class="benefit-item__title title title_fz14">
+                                            Front-End Developer
+                                        </div>
+                                        <div class="benefit-item__subtitle title title_fz12">
+                                            EPAM | Москва (2018-2019)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="benefit-item__descr title title_fz12">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                </div>
+                            </li>
+                            <li class="benefit-item">
+                                <div class="benefit-item__header">
+                                    <div class="benefit-item__img">
+                                        <img src="img/icons/experience/university.svg" alt="">
+                                    </div>
+                                    <div class="benefit-item__titles">
+                                        <div class="benefit-item__title title title_fz14">
+                                            UI/UX Designer
+                                        </div>
+                                        <div class="benefit-item__subtitle title title_fz12">
+                                            Squad Team | Москва (2018)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="benefit-item__descr title title_fz12">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="skills__subtitle title title_fz16">Навыки</div>
+            <div class="skills__title title">Чем я использую в работе</div>
+            <hr class="splitter_benefit">
+
+            <div class="skills__grid">
+                <div class="skills__item">
+                    <div class="skills__img"><img class="skills__img" src="img/icons/skills/html5.svg" alt=""></div>
+                    <div class="skills__name title title_fz14">HTML5</div>
+                    <div class="skills__descr title title_fz12">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__img"><img class="" src="img/icons/skills/css3.svg" alt=""></div>
+                    <div class="skills__name title title_fz14">CSS3</div>
+                    <div class="skills__descr title title_fz12">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__img"><img class="" src="img/icons/skills/js.svg" alt=""></div>
+                    <div class="skills__name title title_fz14">JavaScript</div>
+                    <div class="skills__descr title title_fz12">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__img"><img class="" src="img/icons/skills/jquery.svg" alt=""></div>
+                    <div class="skills__name title title_fz14">Jquery</div>
+                    <div class="skills__descr title title_fz12">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__img"><img class="" src="img/icons/skills/react.svg" alt=""></div>
+                    <div class="skills__name title title_fz14">React</div>
+                    <div class="skills__descr title title_fz12">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__img"><img class="" src="img/icons/skills/node.js.svg" alt=""></div>
+                    <div class="skills__name title title_fz14">Node.js</div>
+                    <div class="skills__descr title title_fz12">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__img"><img class="" src="img/icons/skills/mongo.db.svg" alt=""></div>
+                    <div class="skills__name title title_fz14">Mongo.db</div>
+                    <div class="skills__descr title title_fz12">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
+                </div>
+                
+            </div>
+
+            <div class="skills__graphics">
+                <div class="skills__graphics__item">
+                    <div class="skills__graphics__text">
+                        <div class="skills__graphics__header title title_fz14">Создание сайтов</div>
+                        <div class="skills__graphics__subheader title title_fz14">21%</div>
+                    </div>
+
+                    <div class="skills__bar">
+                        <div class="skills__completed"></div>
+                    </div>
+                </div>
+                <div class="skills__graphics__item">
+                    <div class="skills__graphics__text">
+                        <div class="skills__graphics__header title title_fz14">Создание сайтов</div>
+                        <div class="skills__graphics__subheader title title_fz14">43%</div>
+                    </div>
+
+                    <div class="skills__bar">
+                        <div class="skills__completed"></div>
+                    </div>
+                </div>
+                <div class="skills__graphics__item">
+                    <div class="skills__graphics__text">
+                        <div class="skills__graphics__header title title_fz14">Создание сайтов</div>
+                        <div class="skills__graphics__subheader title title_fz14">64%</div>
+                    </div>
+
+                    <div class="skills__bar">
+                        <div class="skills__completed"></div>
+                    </div>
+                </div>
+                <div class="skills__graphics__item">
+                    <div class="skills__graphics__text">
+                        <div class="skills__graphics__header title title_fz14">Создание сайтов</div>
+                        <div class="skills__graphics__subheader title title_fz14">22.3%</div>
+                    </div>
+
+                    <div class="skills__bar">
+                        <div class="skills__completed"></div>
+                    </div>
+                </div>
+                <div class="skills__graphics__item">
+                    <div class="skills__graphics__text">
+                        <div class="skills__graphics__header title title_fz14">Создание сайтов</div>
+                        <div class="skills__graphics__subheader title title_fz14">12%</div>
+                    </div>
+
+                    <div class="skills__bar">
+                        <div class="skills__completed"></div>
+                    </div>
+                </div>
+                <div class="skills__graphics__item">
+                    <div class="skills__graphics__text">
+                        <div class="skills__graphics__header title title_fz14">Создание сайтов</div>
+                        <div class="skills__graphics__subheader title title_fz14">111%</div>
+                    </div>
+
+                    <div class="skills__bar">
+                        <div class="skills__completed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="projects__subtitle title title_fz16">Портфолио</div>
+            <div class="projects__title title">Мои работы</div>
+            <hr class="splitter_benefit">
+
+            <div class="projects__wrapper">
+                <div class="projects__item projects__item_undone">
+                    <img src="img/icons/projects/photo_2023-05-19_15-53-23 1.png" alt="" class="projects__img projects__img_undone">
+                </div>
+                <div class="projects__item">
+                    <img src="img/icons/projects/pulse.jpg" alt="" class="projects__img">
+                </div>
+                <div class="projects__item">
+                    <img src="img/icons/projects/uber.jpg" alt="" class="projects__img">
+                </div>
+                <div class="projects__item projects__item_vertical projects__item_undone">
+                    <img src="img/icons/projects/photo_2023-05-17_15-13-34 1.png" alt="" class="projects__img projects__img_undone">
+                </div>
+                <div class="projects__item projects__item_undone">
+                    <img src="img/icons/projects/photo_2023-05-22_23-56-28 1.png" alt="" class="projects__img projects__img_undone">
+                </div>
+                <div class="projects__item projects__item_horizontal projects__item_undone">
+                    <img src="img/icons/projects/photo_2023-05-22_23-56-25 1.png" alt="" class="projects__img projects__img_undone">
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section class="price-list" id="price-list">
+        <div class="container">
+            <div class="projects__subtitle title title_fz16">Прайс-лист</div>
+            <hr class="splitter_benefit">
+            <div class="price-list__wrapper">
+                <div class="price-list__item">
+                    <div class="price-list__text">
+                        <div class="price-list__service title title_fz14">Landing-page</div>
+                        <div class="price-list__price title title_fz14">от 8000 руб.</div>
+                    </div>
+                    <div class="price-list__descr title title_fz12">Одностраничный сайт для презентации услуг/товаров/...</div>
+                </div>
+                <div class="price-list__item">
+                    <div class="price-list__text">
+                        <div class="price-list__service title title_fz14">Web-приложение</div>
+                        <div class="price-list__price title title_fz14">от 28000 руб.</div>
+                    </div>
+                    <div class="price-list__descr title title_fz12">Приложение внутри браузера для лучшего комфорта</div>
+                </div>
+                <div class="price-list__item">
+                    <div class="price-list__text">
+                        <div class="price-list__service title title_fz14">Корпоративный сайт</div>
+                        <div class="price-list__price title title_fz14">от 20000 руб.</div>
+                    </div>
+                    <div class="price-list__descr title title_fz12">Сайт для вашего бизнеса или компании</div>
+                </div>
+                <div class="price-list__item">
+                    <div class="price-list__text">
+                        <div class="price-list__service title title_fz14">Android/IOS Приложение</div>
+                        <div class="price-list__price title title_fz14">от 25000 руб.</div>
+                    </div>
+                    <div class="price-list__descr title title_fz12">Приложение для смартфона любой ОС</div>
+                </div>
+                <div class="price-list__item">
+                    <div class="price-list__text">
+                        <div class="price-list__service title title_fz14">Интернет-магазин</div>
+                        <div class="price-list__price title title_fz14">от 30000 руб.</div>
+                    </div>
+                    <div class="price-list__descr title title_fz12">Инструмент для ваших продаж в сети</div>
+                </div>
+                <div class="price-list__item">
+                    <div class="price-list__text">
+                        <div class="price-list__service title title_fz14">Дизайн</div>
+                        <div class="price-list__price title title_fz14">Индивидуально</div>
+                    </div>
+                    <div class="price-list__descr title title_fz12">Создам дизайн для вашего сайта/приложения...</div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
