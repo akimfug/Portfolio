@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+body {
+    background-color: white;
+}
+
 .container {
     display: block;
     margin: 0 auto;
@@ -27,3 +31,4 @@
 @import 'blocks/projects';
 @import 'blocks/price-list';
 @import 'blocks/contacts';
+@import 'blocks/media';

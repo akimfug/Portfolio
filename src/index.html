@@ -97,7 +97,15 @@
         <div class="container">
             <div class="about-me__wrapper">
                 <div class="about-me__img">
-                    <img src="/img/icons/about_me/me.png" alt="me">
+                    <!-- <img srcset="img/icons/about_me/me-min.png 300w,
+                                 img/icons/about_me/me.png 400w" alt="me"
+                        sizes="(min-width: 576px) 400px,
+                                (max-width: 575px) 300px"> -->
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/icons/about_me/me-min.png">
+                        <source media="(min-width: 577px)" srcset="img/icons/about_me/me.png">
+                        <img src="img/icons/about_me/me.png" alt="photo">
+                    </picture>
                 </div>
                 <div class="about-me__content">
                     <div class="title title_fz16 about-me__subtitle">Про меня</div>
@@ -146,7 +154,6 @@
     </section>
     <section class="benefit" id="benefit">
         <div class="container">
-
             <div class="benefit__subtitle title title_fz16">Опыт</div>
             <div class="benefit__title title">Чем я буду полезен</div>
             <hr class="splitter_benefit">
@@ -249,7 +256,7 @@
     <section class="skills" id="skills">
         <div class="container">
             <div class="skills__subtitle title title_fz16">Навыки</div>
-            <div class="skills__title title">Чем я использую в работе</div>
+            <div class="skills__title title">Что я использую в работе</div>
             <hr class="splitter_benefit">
 
             <div class="skills__grid">
@@ -295,7 +302,7 @@
                 <div class="skills__graphics__item">
                     <div class="skills__graphics__text">
                         <div class="skills__graphics__header title title_fz14">Создание сайтов</div>
-                        <div class="skills__graphics__subheader title title_fz14">100%</div>
+                        <div class="skills__graphics__subheader title title_fz14">50%</div>
                     </div>
 
                     <div class="skills__bar">
@@ -355,7 +362,7 @@
             </div>
         </div>
     </section>
-    <section class="projects" id="projects">
+    <!-- <section class="projects" id="projects">
         <div class="container">
             <div class="projects__subtitle title title_fz16">Портфолио</div>
             <div class="projects__title title">Мои работы</div>
@@ -366,10 +373,10 @@
                     <img src="img/icons/projects/photo_2023-05-19_15-53-23 1.png" alt="" class="projects__img projects__img_undone">
                 </div>
                 <div class="projects__item">
-                    <img src="img/icons/projects/pulse.jpg" alt="" class="projects__img">
+                    <a href="projects/RunSmart/src/index.html"><img src="img/icons/projects/pulse.jpg" alt="" class="projects__img"></a>
                 </div>
                 <div class="projects__item">
-                    <img src="img/icons/projects/uber.jpg" alt="" class="projects__img">
+                    <a href="https://akimfug.github.io"><img src="img/icons/projects/uber.jpg" alt="" class="projects__img"></a>
                 </div>
                 <div class="projects__item projects__item_vertical projects__item_undone">
                     <img src="img/icons/projects/photo_2023-05-17_15-13-34 1.png" alt="" class="projects__img projects__img_undone">
@@ -382,8 +389,8 @@
                 </div>
             </div>
         </div> 
-    </section>
-    <section class="price-list" id="price-list">
+    </section> -->
+    <!-- <section class="price-list" id="price-list">
         <div class="container">
             <div class="projects__subtitle title title_fz16">Прайс-лист</div>
             <hr class="splitter_benefit">
@@ -432,10 +439,10 @@
                 </div>
             </div>
             
-        </div>
-    </section>
+        </div> -->
+    <!-- </section> -->
 
-    <section class="contacts" id="contacts">
+    <!-- <section class="contacts" id="contacts"> 
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__img">
@@ -461,11 +468,11 @@
                     <div class="title title_fz14 contacts__descr">Или оставьте ваши данные и я сам вам напишу:</div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input type="text" id="name" name="name">
+                            <input type="text" id="name" required name="name">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input type="text" id="email" name="email">
+                            <input type="text" id="email" required name="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         
@@ -473,13 +480,18 @@
                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
                             <label for="message">Ваше сообщение</label>
                         </div>
-                        <button class="contacts__button btn title title_fz14">Отправить сообщение</button>
+                        <div class="contacts__button">
+                            <button class="contacts__button btn title title_fz14">Отправить сообщение</button>
+                            <input type="checkbox" required placeholder="" name="privacy" id="privacy">
+                            <label for="privacy" id="privacy">Я принимаю<a href="/policy.html"> Политику Конфиденциальности</a></label> 
+                        </div>
+                        
                     </form>
                     
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <script src="js/script.js"></script>
 </body>
 </html>

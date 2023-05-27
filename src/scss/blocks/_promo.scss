@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    cursor: pointer;
     .hamburger_long {
         width: 36px;
         margin: 6px 0px;
@@ -12,15 +13,18 @@
     span {
         width: 30px;
         height: 3px;
-        background: #FFFFFF;
+        background: #000;
+        // mix-blend-mode: difference;
+        
     }
 }
 .promo {
     position: relative;
     color: #fff;
-    padding: 188px 0px 368px 50px;
-    height: 860px;
+    padding: 188px 0px 368px 10px;
+    height: 100vh;
     background: url('../img/bg/Prom.jpg') no-repeat 50%/cover;
+    
 
     p, h1, .title {
         color: #fff;

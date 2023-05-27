@@ -1,0 +1,54 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 1140px;
+}
+
+h1 {
+    text-align: center;
+}
+.policy {
+    p {
+        margin: 10px;
+        font-size: 16px;
+    }
+    ol li::marker {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    padding: 50px 0px;
+    &__table {
+        margin: 30px 0px;
+        display: grid;
+        grid-template: repeat(4, auto) / repeat(2, auto);
+        // row-gap: 15px;
+        // width: 800px;
+        justify-content: center;
+    }
+    &__column {
+        
+    }
+    &__item {
+        border: 1px solid black;
+        padding: 15px;
+    }
+    li ul li {
+        list-style-type: '- ';
+        margin-left: 20px;
+    }
+}

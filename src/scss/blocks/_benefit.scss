@@ -3,6 +3,7 @@
     position: relative;
     &__column:nth-child(2) {
         margin-left: 50px;
+        
     }    
     &__title {
         text-align: center;
@@ -34,16 +35,10 @@
             left: -50px;
         }
     }
-    &__section {
-        // margin-left: 50px;
-    }
     &-item {
         margin-top: 45px;
         position: relative;
         list-style-type: none;
-        &__wrapper {
-            
-        }
         &__header {
             display: flex;
             height: 36px;
